@@ -1,21 +1,29 @@
 {
   "name": "docker-compose-command-center",
   "version": "0.0.1",
-  "description": "",
+  "description": "A blessed UI for docker-compose output",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "engines": {
+    "node": ">=10.0.0"
   },
   "bin": {
-    "dccc": "./index.js"
+    "dccc": "./index.js",
+    "docker-compose-command-center": "./index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/trxcllnt/docker-compose-command-center.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "files": [
+    "linq.js",
+    "index.js",
+    "LICENSE",
+    "README.md",
+    "components"
+  ],
+  "keywords": ["blessed", "docker", "docker-compose"],
+  "author": "Paul Taylor <paul.e.taylor@me.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/trxcllnt/docker-compose-command-center/issues"
   },
